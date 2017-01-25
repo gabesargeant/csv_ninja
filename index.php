@@ -48,7 +48,7 @@
 <em>If you want to shoot off and start right now just pick a link on the right. I'm sure you'll figure it out</em><br>
 
 <p><h2>For a bit more information keep reading</h2>
-<p>This is a map based data extraction tool. I have placed <a href="www.abs.gov.au">Australia Bureau of Statistics (ABS)</a> Census Datapacks in an reasonably simple database. 
+<p>This is a map based data extraction tool. I have placed <a href="http://www.abs.gov.au/">Australia Bureau of Statistics (ABS)</a> Census Datapacks in an reasonably simple database. 
 <p>And I've put this up in the <em>cloud</em> on an <a href="https://aws.amazon.com/">AWS EC2 instance.</a>
 <p>I haven't changed the data in any way. I did join a few tables which were split up. But the numbers are all the same.
 <p>Not to take away from my own efforts but all I really did was wrap up CSV files in a MySQL DB in a semi simple program that allows you to select an area and then get data based on you selection.
@@ -102,10 +102,10 @@ This is a list of the technologies and services and applications that are involv
     <p>Split is super useful for splitting up large files. When I exported my finished database and compressed it, it came to about 300MB. Which isn't that big, but I have crap internet. So uploading 300 1mb chunks to AWS was way easier than attempting to get some decent bandwidth for a single 300mb upload.
     <p>Cat is the reverse of split. It puts the broken egg back together.
     <p>
-    <li><a href="www.loading.io">Loading.io</a></li>
+    <li><a href="http://www.loading.io/">Loading.io</a></li>
     When the map is loading there is a little spinning box gif. Thanks loading.io.
     <p>
-    <li><a href="www.abs.gov.au">The data and map services came frome the ABS.</a></li>
+    <li><a href="http://www.abs.gov.au/">The data and map services came frome the ABS.</a></li>
     Specifically the data for CSV ninja is that which is contained in the ABS Census DataPacks for the Basic Community Profiles Short Headers. Everything is there if you want to spin up your own DB or get the whole stash
     <p>
 </ul>

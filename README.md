@@ -7,7 +7,7 @@ at my ec2 instace thats running the show currently....
 
 http://ec2-13-54-32-201.ap-southeast-2.compute.amazonaws.com/
 
-As you do the files in this repo are pretty much what is up on that above instance. 
+As you are aware the files in this repo are pretty much what is up on that above instance. 
 Whats missing? a php file called mysql.php which contains connection information to the db. 
 
 This file is this:
