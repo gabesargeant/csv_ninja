@@ -26,11 +26,34 @@ So if you want to have a crack at copying the site in all its glory just...
 
 
 Lastly,
-The DB is readonly, so i didn't use prepared statements. That makes the SQL safe 
+The DB is readonly, so I didn't use prepared statements. That makes the SQL safe 
 because there are noupdates or inserts or delets but there is the possibility of 
 DOS via rescursive sql. 
 Hopefully that doesn't happen before I covert version 1.0 to version 1.1 where 
 that has been sorted.
+
+More on the DB:
+
+In the folder db_scriptsmisc ther eare misc scripts...
+If you want to create a copy of the db the Census11AA.sql will create an empty
+database for you. And don't worry i have removed the password that i use for the 
+web use on my EC@ site.
+
+So importing the data is easy. Have a look at the import queries sql file. And
+more importantly, look at the merge script. Thats how i mashed things together.
+
+The way to  use that is when unpack the ABS datapacks if you grab the whole of australia
+basic community profiles you should have about 850 files. in 18 folders. Copy that script
+into the 18 folders and then run it. it will merge the files as needed.
+
+The clean.sh script will remove the excess files as needed.
+
+Once the merge is done I put all the files into one folder and then logged into mysql 
+and ran the command mysql> source importqueries.sql. about 5 minutes later 3.5 million rows
+of data accross 46 tables was in a db at a size of 1.3 gig.
+
+So those scripts and sql on its own should be enough to get up an running a fairly intersting
+DB.
 
 -Gabe Sargeant
 
