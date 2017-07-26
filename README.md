@@ -1,11 +1,14 @@
 # csv_ninja
 
+UPDATE: This is very much dead. The Services I was hooking into are gone And the EC2 instance isn't there anymore.
+
+Regards
+
+
 Hoi Hoi,
 
 Read the index.php page for all the stuff thats usually in the git readme or 
 have a glance at my ec2 instace thats running the show currently....
-
-http://ec2-13-54-32-201.ap-southeast-2.compute.amazonaws.com/
 
 As you are aware the files in this repo are pretty much what is up on that 
 above instance. Whats missing? a php file called mysql.php which contains 
